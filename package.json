@@ -1,0 +1,14 @@
+{
+  "dependencies": {
+    "concurrently": "^10.0.3",
+    "cors": "^2.8.6",
+    "helmet": "^8.3.0",
+    "nodemon": "^3.1.14",
+    "react-redux": "^9.3.0"
+  },
+  "scripts": {
+    "server": "nodemon backend/server.js",
+    "client": "npm run start --prefix frontend",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  }
+}

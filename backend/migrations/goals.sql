@@ -1,0 +1,7 @@
+CREATE TABLE IF NOT EXISTS goals (
+        id SERIAL PRIMARY KEY,
+        date DATE NOT NULL,
+        name VARCHAR(100) UNIQUE NOT NULL,
+        description VARCHAR(256) NOT NULL,
+        created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+);

@@ -1,0 +1,24 @@
+@import "tailwindcss";
+
+
+
+
+/* Responsive root font size so rem-based text scales with viewport */
+:root {
+  --font-min: 14px;
+  --font-max: 18px;
+}
+@theme {
+  --color-primary: #513afa;
+}
+html {
+  font-size: clamp(14px, 0.9rem + 0.4vw, 18px);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+}
+
+
