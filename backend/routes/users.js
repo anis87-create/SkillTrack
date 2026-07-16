@@ -1,5 +1,5 @@
 const  route  = require('express').Router();
-const userCtrl = require('../controllers/usersCtrl');
+const userCtrl = require('../controllers/users.controller');
 const protect = require('../middlewares/protect');
 
 

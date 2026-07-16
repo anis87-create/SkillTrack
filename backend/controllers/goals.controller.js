@@ -1,6 +1,6 @@
 const { query } = require("../config/db");
-const GoalService = require("../models/goals");
-const { asyncHandler } = require("../utils/asyncHandler");
+const GoalService = require("../repositories/goals");
+const { asyncHandler } = require("../middlewares/asyncHandler");
 
 const getAllGoals = asyncHandler(async (req, res, next) => {
     const goals = await GoalService.getAll();
