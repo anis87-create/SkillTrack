@@ -23,6 +23,10 @@
     "pg": "^8.21.0"
   },
   "devDependencies": {
-    "dotenv-cli": "^11.0.0"
+    "@types/express": "^5.0.6",
+    "@types/node": "^26.1.1",
+    "@types/pg": "^8.20.0",
+    "dotenv-cli": "^11.0.0",
+    "typescript": "^5.9.3"
   }
 }

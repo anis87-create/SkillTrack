@@ -1,9 +1,12 @@
 
+// Allow requiring .ts controllers/services/repositories directly from JS entry points
+require('tsx/cjs');
+
 // Centralised environment configuration (loads .env and validates)
-require('./config/env.js');
+require('./config/env');
 const app = require('./app.js');
 const PORT = process.env.PORT || 5000;
-const { query } = require('./config/db.js');
+const { query } = require('./config/db');
 
 
 async function start() {
